@@ -15,7 +15,7 @@ SHODAN_API = config.get('SHODAN', 'API_KEY')
 #Logger
 logger = logging.getLogger('LOGGER')
 logger.setLevel(logging.INFO)
-handler = logging.FileHandler('mylog.log')
+handler = logging.FileHandler('log_files.log')
 formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
